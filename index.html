@@ -1,5 +1,83 @@
 <html>
-  <head></head>
+  <head> </head>
 
-  <body></body>
+  <body>
+    <h1>Iridescent Rendering</h1>
+
+    <h2>Summary</h2>
+    <p>
+      Our goal is to build upon the path tracer we implemented in projects 3-1
+      and 3-2 and introduce the ability to render iridescent texture by
+      implementing thin film interference, which gradually changes color when
+      you observe from different angles. As a result, the rendering under our
+      implementation should reflect lights more realistically.
+    </p>
+
+    <h2>Team Members (Name, Student ID, Email, Github handle)</h2>
+    <li>Joy Chang (3034782362, joychang02@berkeley.edu, joyyy26)</li>
+    <li>Evelyn Wu (3034524650, evelynpwu@berkeley.edu, evelynwu88)</li>
+    <li>
+      Yuetian Tang (3034728516, tangyuetian1123@berkeley.edu, yuetiantang)
+    </li>
+    <li>Yin Deng (3033647998, yindeng@berkeley.edu, yinxudeng)</li>
+
+    <h2>Problem Description</h2>
+    <p>
+      Iridescence is a very common visual effect as we can see lights
+      interacting with CD’s or bubbles in a colorful way. In this project, we
+      aim to build on top of project 3 to support iridescent rendering. It may
+      be hard to initially wrap your head around the notion of interpreting
+      light as waves instead of particles. We attempt to accomplish this by
+      implementing thin film interference and accounting for lights with
+      different wavelengths as if objects were covered in thin films. We also
+      need to account for both the amount of light rays reflected off the thin
+      film and the amount transmitted into the internal medium.
+    </p>
+
+    <h2>Goals and Deliverables</h2>
+    <h3>What We Want to Deliver</h3>
+    <li>
+      None of us did project 3-2 part 2, so our first deliverable would be to
+      implement multifacet material.
+    </li>
+    <li>
+      Render images with iridescent effect, mainly for objects covered in a thin
+      film. We want to achieve something like this: <br />
+      <img src="images/iridescent.png" alt="" width="200" />
+    </li>
+    <li>
+      Render images with black body radiation which accounts for lights with
+      different temperature. We want to achieve something like this: <br />
+      <img src="images/blackbodyradiation.png" alt="" width="200" />
+    </li>
+
+    <h3>What We Hope to Achieve</h3>
+    <li>
+      We hope that after implementing iridescence, we can render oil slick or
+      soap bubble, which can have different colors depending on the angle of
+      view. We want to achieve something like this: <br />
+      <img src="images/oilslick.png" alt="" width="200" />
+    </li>
+
+    <h2>Schedule</h2>
+    <h3>Week 1</h3>
+    <li>Finish Project 3-2 part 2</li>
+    <li>Refactor code to account for lights with different wavelengths</li>
+
+    <h3>Week 2</h3>
+    <li>Finish as much of iridescent rendering as possible</li>
+
+    <h3>Week 3</h3>
+    <li>Finish iridescent rendering</li>
+    <li>Finish black body radiation</li>
+
+    <h3>Week 4</h3>
+    <li>Work on rendering oil slick/soap bubble</li>
+
+    <h2>Resources</h2>
+    <li>https://sydnie-shea.github.io/iridescentFinal/</li>
+    <li>
+      https://gamedev.net/tutorials/_/technical/graphics-programming-and-theory/thin-film-interference-for-computer-graphics-r2962/
+    </li>
+  </body>
 </html>
